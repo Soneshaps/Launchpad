@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap");
+
+.launchpad-main span {
+  font-family: "Sonsie One", cursive;
+  font-size: 2rem;
+  color: blanchedalmond;
+}
+
+.launchpad-main {
+  height: 100vh;
+}
