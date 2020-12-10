@@ -5,6 +5,7 @@
 
 
 Responsive launchpad for music enthusiasts written in React.
+With MULTI TOUCH !!! but i am working in css of multi-touch 
 
 ** Demo
 
