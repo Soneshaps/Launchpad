@@ -48,20 +48,7 @@ const rowFour = [
 
 
 
-class LaunchpadBody extends Component {
-    SoundPlayLoading =() => {
-
-        const soundOne = new Howl({
-            src:['1.wav','2.wav','3.wav','4.wav','21.wav','22.wav','23.wav','24.wav','31.wav','32.wav','33.wav','34.wav','41.wav','42.wav','43.wav','44.wav']
-        });
-        soundOne.mute(true);
-        soundOne.play();
-        soundOne.mute(false);
-    }
-    componentDidMount() {
-        this.SoundPlayLoading();
-      }
-    
+class LaunchpadBody extends Component {   
     SoundPlay =(src) => {
         const sound = new Howl({
             html5 : true ,
