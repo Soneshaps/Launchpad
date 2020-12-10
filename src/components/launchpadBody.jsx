@@ -52,11 +52,7 @@ if (typeof document !== 'undefined') {
 
 
 
-class LaunchpadBody extends Component { 
-    componentDidMount() {
-        document.getElementById("yo").click()
-      }
-      
+class LaunchpadBody extends Component {   
     SoundPlay =(src) => {
         const sound = new Howl({
             src
@@ -68,28 +64,28 @@ class LaunchpadBody extends Component {
     RenderFirstRow=()=>{
         return rowOne.map((soundObj, index) =>{
             return(
-                <div key={index} id="yo" className="button buttonOne" onTouchStart={()=> this.SoundPlay(soundObj.sound)} onClick={isTouch ? undefined:()=> this.SoundPlay(soundObj.sound)}></div> 
+                <div key={index} className="button buttonOne" onTouchStart={()=> this.SoundPlay(soundObj.sound)} onClick={isTouch ? undefined:()=> this.SoundPlay(soundObj.sound)}></div> 
             )
         })
     }
     RenderSecondRow=()=>{
         return rowTwo.map((soundObj, index) =>{
             return(
-                <div key={index} id="yo" className="button buttonTwo" onTouchStart={()=> this.SoundPlay(soundObj.sound)} onClick={isTouch ? undefined:()=> this.SoundPlay(soundObj.sound)}></div> 
+                <div key={index} className="button buttonTwo" onTouchStart={()=> this.SoundPlay(soundObj.sound)} onClick={isTouch ? undefined:()=> this.SoundPlay(soundObj.sound)}></div> 
             )
         })
     }
     RenderThirdRow=()=>{
         return rowThree.map((soundObj, index) =>{
             return(
-                <div key={index} id="yo" className="button buttonThree" onTouchStart={()=> this.SoundPlay(soundObj.sound)} onClick={isTouch ? undefined:()=> this.SoundPlay(soundObj.sound)}></div> 
+                <div key={index} className="button buttonThree" onTouchStart={()=> this.SoundPlay(soundObj.sound)} onClick={isTouch ? undefined:()=> this.SoundPlay(soundObj.sound)}></div> 
             )
         })
     }
     RenderFourthRow=()=>{
         return rowFour.map((soundObj, index) =>{
             return(
-                <div key={index} id="yo" className="button buttonFour" onTouchStart={()=> this.SoundPlay(soundObj.sound)} onClick={isTouch ? undefined:()=> this.SoundPlay(soundObj.sound)}></div> 
+                <div key={index} className="button buttonFour" onTouchStart={()=> this.SoundPlay(soundObj.sound)} onClick={isTouch ? undefined:()=> this.SoundPlay(soundObj.sound)}></div> 
             )
         })
     }
