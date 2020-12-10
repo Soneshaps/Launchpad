@@ -51,7 +51,11 @@ const rowFour = [
 class LaunchpadBody extends Component {
     SoundPlay =(src) => {
         const sound = new Howl({
+            html5 : true ,
+            preload : true,
             src
+            
+
         });
         sound.play();
         Howler.volume(0.5)
