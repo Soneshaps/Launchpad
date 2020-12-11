@@ -53,6 +53,9 @@ if (typeof document !== 'undefined') {
 
 
 class LaunchpadBody extends Component {   
+    componentDidMount(){
+        alert('Please click on all buttons so that beat can load!!! I will fix this issue very soon ');
+    }
     SoundPlay =(src) => {
         const sound = new Howl({
             src
